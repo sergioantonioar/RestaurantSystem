@@ -1,0 +1,39 @@
+{
+  "name": "sistema-restaurante",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@types/js-cookie": "^3.0.6",
+    "axios": "^1.9.0",
+    "bootstrap": "^5.3.6",
+    "chart.js": "^4.4.9",
+    "framer-motion": "^12.18.1",
+    "js-cookie": "^3.0.5",
+    "lucide-react": "^0.487.0",
+    "next": "15.3.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "react-toastify": "^11.0.5",
+    "sweetalert2": "^11.21.2",
+    "sweetalert2-react-content": "^5.1.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@next/bundle-analyzer": "^15.4.0-canary.51",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "critters": "^0.0.23",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.0",
+    "typescript": "^5"
+  }
+}

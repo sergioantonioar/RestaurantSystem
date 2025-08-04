@@ -1,0 +1,72 @@
+/* Estilos para el sidebar y submenús */
+
+/* Submenu styling */
+.submenu {
+  list-style-type: none;
+  padding-left: 20px;
+  margin-top: 5px;
+  overflow: visible;
+  display: block !important; /* Forzar visualización */
+  max-height: none !important; /* Anular restricciones de altura */
+}
+
+/* Ensure submenu links are visible */
+.submenu-link {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 0.95em;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.submenu-link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+/* Rotation for chevron */
+.rotate-180 {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+/* Botón de navegación de submenús */
+.nav-link {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  border-radius: 6px;
+  margin-bottom: 5px;
+  transition: all 0.2s ease;
+}
+
+.nav-link.active {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.nav-text {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+/* Animaciones */
+.submenu {
+  animation: slideDown 0.3s ease forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

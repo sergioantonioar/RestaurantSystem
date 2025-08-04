@@ -1,0 +1,93 @@
+/* Estilos mejorados para el sidebar responsivo */
+@media (max-width: 768px) {
+  #sidebar {
+    position: fixed;
+    top: 0;
+    left: -280px; /* Oculto por defecto */
+    width: 280px;
+    height: 100vh;
+    background-color: var(--primary);
+    z-index: 9999;
+    transition: left 0.3s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    padding: 20px;
+  }
+
+  #sidebar.open {
+    left: 0; /* Visible cuando tiene la clase .open */
+  }
+
+  .sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9998; /* Justo debajo del sidebar */
+    animation: fadeIn 0.2s ease-in-out;
+    backdrop-filter: blur(2px);
+  }
+  .hamburger-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 10000; /* Mayor que el sidebar */
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 1;
+    visibility: visible;
+  }  
+  .hamburger-btn:hover,
+  .hamburger-btn:active {
+    background-color: var(--primary-dark);
+    transform: scale(1.05);
+  }
+  
+  /* Clase para manejar la transición de aparición/desaparición del botón hamburguesa */
+  .hamburger-btn.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .close-sidebar-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+  }
+  
+  .close-sidebar-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  #main {
+    margin-left: 0;
+    padding-top: 70px; /* Espacio para el botón de hamburguesa */
+  }
+
+  body.sidebar-open {
+    overflow: hidden; /* Prevenir scroll cuando el sidebar está abierto */
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
