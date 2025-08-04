@@ -1,6 +1,10 @@
 # RestaurantSystem
 
-## 🛠️ Backend - Sistema POS para Restaurante Foodly
+[![Restaurant-System1.jpg](https://i.postimg.cc/Xqrmmhv8/Restaurant-System1.jpg)](https://postimg.cc/tnHBVBWZ)
+
+[![Restaurant-System2.jpg](https://i.postimg.cc/wj8Z4wYX/Restaurant-System2.jpg)](https://postimg.cc/PPySPzxJ)
+
+## 🛠️ Backend - Sistema POS Foodly
 
 Este proyecto representa el desarrollo del **backend de un sistema de punto de venta (POS)** diseñado específicamente para **Foodly**, un restaurante de comida rápida que busca optimizar su operación diaria mediante soluciones tecnológicas eficientes.
 
